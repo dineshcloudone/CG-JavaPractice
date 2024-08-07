@@ -13,9 +13,7 @@ class Practice
 	{
 		ll.addFirst("First");
 		ll.add("added String");
-		ll.add(ll.size(), "added using index");
-		
-		
+		ll.add(ll.size(), "added using index");		
 		
 		ll.forEach(x->System.out.println("Linked List(ll) elements : "+x));
 		

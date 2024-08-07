@@ -30,17 +30,17 @@ public class Example_using_Lambda_Exp {
 		al.add(new Student(1015, "DJai", 1521));
 
 		//sorting for String instance variables of class		
-		//Collections.sort(al, (s1,s2)->{ return s1.name.compareTo(s2.name); });
+		Collections.sort(al, (s1,s2)->{ return s1.name.compareTo(s2.name); });
 		
 		//sorting for integer kind of instance varaibles
-		Collections.sort(al,(s1,s2)->{
-			  if(s1.rollno==s2.rollno)
-				  return 0;
-			  else if(s1.rollno>s2.rollno)
-				  return 1;
-			  else 
-				  return -1;
-		  });
+//		Collections.sort(al,(s1,s2)->{
+//			  if(s1.rollno==s2.rollno)
+//				  return 0;
+//			  else if(s1.rollno>s2.rollno)
+//				  return 1;
+//			  else 
+//				  return -1;
+//		  });
 		
 		
 		// al.sort(new NameComparator());

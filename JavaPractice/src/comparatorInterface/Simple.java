@@ -62,6 +62,7 @@ public class Simple
 		
 		//Collections.sort(al, new NameComparator());
 		al.sort(new NameComparator());
+		//al.sort(new AgeComparator());
 		
 		for(Student s:al) 
 		{

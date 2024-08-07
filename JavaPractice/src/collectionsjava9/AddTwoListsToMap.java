@@ -32,7 +32,7 @@ public class AddTwoListsToMap {
 		// factory method List.of
 		List<String> values = List.of("valu1", "value2");
 		
-		Map<String,String> map=new HashMap<>(Map.ofEntries(Map.entry(null, null))
+		Map<String,String> map=new HashMap<>(Map.ofEntries(Map.entry(null, null)));
 	}
 
 	public static void main(String[] args) {

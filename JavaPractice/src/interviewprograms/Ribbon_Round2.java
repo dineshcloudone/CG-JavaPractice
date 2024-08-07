@@ -94,7 +94,7 @@ public class Ribbon_Round2 {
 		
 		//print_pattern();
 		
-		//dict_common_key();
+		dict_common_key();
 	}
 	
 }

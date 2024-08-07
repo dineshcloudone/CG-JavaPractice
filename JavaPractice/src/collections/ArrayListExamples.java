@@ -31,7 +31,7 @@ import java.util.stream.*;
 	so If there are less add and remove operations and more search operations requirement, ArrayList would be your best bet.
  *  
  *  
- *  ArrayList allows null values
+ * ArrayList allows null values
  *  
  * Link to convert arrays to List : https://www.programcreek.com/2014/04/check-if-array-contains-a-value-java/
  *  

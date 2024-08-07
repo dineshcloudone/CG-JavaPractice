@@ -45,8 +45,8 @@ public class Test {
 		// TODO Auto-generated method stub
 		
 		Test t=new Test();
-		t.fibonacciSeries(13);
-		//t.palindrome();
+		//t.fibonacciSeries(13);
+		t.palindrome();
 		//t.factorial(5);
 
 	}

@@ -41,7 +41,6 @@ public class HashSetExamples {
 		hs.add(null);
 		hs.add(null);
 		
-		
 		HashSetExamples hse=new HashSetExamples();
 		hse.displayUsingForEach(hs);
 		

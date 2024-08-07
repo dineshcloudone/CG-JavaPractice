@@ -128,8 +128,7 @@ public class ArrayList_JavaTpoint {
 		System.out.println("After invoking add(E e) method: "+al);  
 		
 		al.add(1, "Gaurav");  
-        System.out.println("After invoking add(int index, E element) method: "+al);
-        
+        System.out.println("After invoking add(int index, E element) method: "+al);        
         
         ArrayList<String> al2=new ArrayList<String>();
         al2.add("abcd");
