@@ -33,11 +33,12 @@ public class StringFAQS {
 	}
 
 	void reverseStringEx1(String s) {
+		
 		char[] ch = new char[s.length()];
 		char[] ch2 = new char[s.length()];
 
 		ch = s.toCharArray();
-
+		
 		/*
 		 * for(int i=0;i<s.length();i++) { ch[i]=s.charAt(i); }
 		 */
@@ -279,7 +280,8 @@ public class StringFAQS {
 
 		String sentence = "welcomewelcomewelcomewelcomewel";
 		String word = "come";
-		String regex = "\\b" + word + "\\b";
+		//String regex = "\\b" + word + "\\b";
+		String regex = word;
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(sentence);
 
@@ -346,7 +348,7 @@ public class StringFAQS {
 		// faq.nullStringInIf();
 
 		 // faq.countChar();
-		// faq.countWord();
+		faq.countWord();
 
 		// String s="dinesh kumar";
 
@@ -363,7 +365,7 @@ public class StringFAQS {
 		// faq.reverseStringEx2(s);
 		// faq.sortWordsEx();
 		// faq.sortArray();
-		 faq.removeParticularCharacterFromString(s);
+		 //faq.removeParticularCharacterFromString(s);
 		// faq.swapTwoStringWithoutThirdVar();
 
 		// faq.countChar_UsingHashMap();

@@ -12,11 +12,11 @@ public class RegularExp2 {
 
 		String d="dinesh";		
 		
-		//System.out.println("String cointains only alphabets :"+re.stringContainsOnlyAphabets("dinesh"));
+		System.out.println("String cointains only alphabets :"+re.stringContainsOnlyAphabets("dinesh"));
 
 		//System.out.println("String removing white spaces :" + re.removeWhiteSpaces("this is dinesh"));
 		
-		re.readMobileNoFile();
+		//re.readMobileNoFile();
 	}
 }
 
@@ -38,13 +38,13 @@ class MainReg {
 	
 	public void readMobileNoFile() throws Exception {
 		
-		BufferedReader br=new BufferedReader(new FileReader("C:\\Dinesh\\Receipt_Viewer_Fix.txt"));
+		BufferedReader br=new BufferedReader(new FileReader("D:\\Java\\CG-JavaPractice\\JavaPractice\\src\\regexpressions\\text_to_search.txt"));
 		
 		String line;
 
 		while((line=br.readLine())!=null) {
 			//Matcher m=Pattern.compile("(0/91)?[7-9][0-9]{9}").matcher(line);			
-			Matcher m=Pattern.compile("^(0/91)?[978][0-9]{9}").matcher(line);
+			Matcher m=Pattern.compile("(0/91)?[978][0-9]{9}").matcher(line);
 			while(m.find()) {
 				System.out.println(" mob no : "+m.group());// to find the mob no from a file
 				System.out.println(" mob no : "+m.group().contains("74164022"));// to find given mob no is valid or not				

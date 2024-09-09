@@ -43,40 +43,43 @@ class SingletonClass {
 		System.out.println("Value from x - "+x.s);
 		System.out.println("Value from x - "+y.s);
 		System.out.println("Value from x - "+z.s);
+		
+		
+		/*
+		 *  Implementing the multi threading
+		 *  
+		 *  Runnable task= () -> {
+		 *  
+		 *  	Singleton.getInstance();
+		 *  
+		 *  }
+		 *  
+		 *  
+		 *  Thread thread1=new Thread(task);
+		 *  Thread thread2=new Thread(task);
+		 *  Thread thread3=new Thread(task);
+		 *  
+		 *  thread1.start();
+		 *  thread2.start();
+		 *  thread3.start();
+		 *  
+		 *  try{
+		 *  
+		 *  thread1.join();
+		 *  thread2.join();
+		 *  thread3.join();
+		 *  
+		 *  
+		 *  }
+		 *  catch(InterruptedException e){
+		 *  	e.printStackTrace();
+		 *  }
+		 * 
+		 * 
+		 */
 	}
 }
 
 
-//Java program implementing Singleton class
-//with using getInstance() method
-
-//Class 1
-//Helper class
-class Singleton {
-	// Static variable reference of single_instance
-	// of type Singleton
-	private static Singleton single_instance = null;
-
-	// Declaring a variable of type String
-	public String s;
-
-	// Constructor
-	// Here we will be creating private constructor
-	// restricted to this class itself
-	private Singleton()
-	{
-		s = "Hello I am a string part of Singleton class";
-	}
-
-	// Static method
-	// Static method to create instance of Singleton class
-	public static Singleton getInstance()
-	{
-		if (single_instance == null)
-			single_instance = new Singleton();
-
-		return single_instance;
-	}
-}
 
 

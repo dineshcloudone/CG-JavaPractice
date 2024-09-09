@@ -24,14 +24,16 @@ public class MySingleton_Ex {
 
 class MySingleton
 {
-	static MySingleton instance = null;
+	// 1. private static instance of the class 
+	private static MySingleton instance = null;
+	
 	public int x = 10;
 	
-	// private constructor can't be accessed outside the class
+	//2.  private constructor can't be accessed outside the class
 	private MySingleton() { }
 
-	// Factory method to provide the users with instances
-	static public MySingleton getInstance()
+	//3. Factory method to provide the users with instance
+	public static MySingleton getInstance()
 	{
 		if (instance == null)		
 			instance = new MySingleton();

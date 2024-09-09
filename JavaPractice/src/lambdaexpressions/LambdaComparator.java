@@ -48,9 +48,10 @@ public class LambdaComparator {
 //		});
 		
 		//sort as per id using Integer
-//		Collections.sort(l,(p1,p2)-> {
-//			return Integer.compare(p1.id, p2.id);
-//		});
+		Collections.sort(l,(p1,p2)-> {
+			return Integer.compare(p2.id, p1.id);
+		});
+		l.forEach(x->System.out.println(x.id+" "+x.name+" "+x.price));
 		
 		//sort as per price
 //		Collections.sort(l,(p1,p2)-> {			
@@ -58,7 +59,7 @@ public class LambdaComparator {
 //		});
 		
 	//filtering the data based on price
-    Stream<Productp> fl_data=l.stream().filter(x->x.price>10000);		
-	fl_data.forEach(x->System.out.println(x.id+" "+x.name+" "+x.price));
+//    Stream<Productp> fl_data=l.stream().filter(x->x.price>10000);		
+//	fl_data.forEach(x->System.out.println(x.id+" "+x.name+" "+x.price));
 
 }}

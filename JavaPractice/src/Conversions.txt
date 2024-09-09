@@ -1,19 +1,23 @@
 Certainly!
 
-1. **a.intValue()**: This method is used to extract the integer value from an `Integer` object `a`. It returns the integer value represented by the `Integer` object `a`.
+1. **a.intValue()**: This method is used to extract the integer value from an `Integer` object `a`. 
+It returns the integer value represented by the `Integer` object `a`.
 
    ```java
    Integer a = 10;
    int value = a.intValue(); // value is now 10
    ```
 
-2. **Integer.valueOf()**: This method is a static factory method of the `Integer` class. It returns an `Integer` object representing the specified `int` value. It allows you to create an `Integer` object from an `int` primitive.
+2. **Integer.valueOf()**: This method is a static factory method of the `Integer` class. 
+It returns an `Integer` object representing the specified `int` value. 
+It allows you to create an `Integer` object from an `int` primitive.
 
    ```java
    Integer a = Integer.valueOf(10); // a is now an Integer object representing the value 10
    ```
 
-3. **Integer.parseInt()**: This method is a static method of the `Integer` class used to parse the specified string as a signed decimal integer. It returns the `int` value represented by the string.
+3. **Integer.parseInt()**: This method is a static method of the `Integer` class used to parse the specified string as a signed decimal integer. 
+It returns the `int` value represented by the string.
 
    ```java
    int value = Integer.parseInt("10"); // value is now 10
@@ -95,5 +99,13 @@ To convert an `Integer` object to a `String`, you can use either of the followin
     // or
     String str = String.valueOf(num); // str is now "10"
     ```
+    
+ 3. int a = 10;
+        String str = String.valueOf(a);
+        System.out.println("String value: " + str);
+        
+ 4.  int a = 10;
+        String str = String.format("%d", a);
+        System.out.println("String value: " + str);
 
 Both methods will give you a `String` representation of the `Integer` object's value.

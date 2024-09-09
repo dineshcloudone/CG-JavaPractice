@@ -31,7 +31,7 @@ public class ArrayList_JavaTpoint {
 
 		ArrayList_JavaTpoint al = new ArrayList_JavaTpoint();
 		
-		al.arrayListEx1();
+		//al.arrayListEx1();
 		//al.sort_ArrayList();
 		//al.addElements_DiffWays();
 		

@@ -52,8 +52,7 @@ public class AllBasicEx {
 		productlist.add(new Product3(4,"Sony Laptop",28000f));  
 		productlist.add(new Product3(5,"Apple Laptop",90000f));
 		
-		//Using reduce
-		
+		//Using reduce		
 		Float totalPrice=productlist.stream()
 					.map(p->p.price)
 					.reduce(0.0f, Float::sum);
@@ -64,8 +63,7 @@ public class AllBasicEx {
 				.reduce(0.0f,(sum,price)-> sum+price);
 		System.out.println("Total Price 2 :"+totalPrice2);
 			
-		//Using Collectors
-	
+		//Using Collectors	
 		double totaldouble=productlist.stream()
 					.collect(Collectors.summingDouble(p->p.price));
 		

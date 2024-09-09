@@ -17,6 +17,14 @@ public class ReadFolderFiles {
 		Method m=c.getDeclaredMethod("message",int.class);		
 		//Method m=c.getDeclaredMethod("message",HashMap.class);
 		m.setAccessible(true);
-		m.invoke(o,a);
+		//m.invoke(o,a);
+		
+		// New approach
+		// Obtain the Constructor object for the class
+        Constructor<A> constructor = A.class.getConstructor();
+        // Create a new instance of MyClass using the Constructor
+        Object instance = constructor.newInstance();
+        System.out.println("Instance created: " + instance);
+        m.invoke(instance,a);
 	}
 }

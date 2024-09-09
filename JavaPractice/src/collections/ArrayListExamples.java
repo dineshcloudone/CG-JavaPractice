@@ -351,11 +351,11 @@ public class ArrayListExamples {
 		//o.updateOneArrayListElement(al1);
 		//o.forEachEx(al1);
 		//o.sortIntegerArrayListElements();
-		//o.mergeTwoList();
+		o.mergeTwoList();
 		//o.copyArrayListUsingCopyConstructor(al1);
 		//o.cloneEx(al1);
 		//o.getAndSet(al1);
-		o.convertArraytoList(al1);
+		//o.convertArraytoList(al1);
 		//o.removeIfMethod("gurram");
 		
 	}

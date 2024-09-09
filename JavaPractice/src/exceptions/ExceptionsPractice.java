@@ -71,11 +71,11 @@ class ExceptionExample {
 			int a = 1 / 0;
 			}
 
-		catch (ArithmeticException ae) {
-
-			int b=1/0;
-			ae.printStackTrace();
-		}
+//		catch (ArithmeticException ae) {
+//
+//			int b=1/0;
+//			ae.printStackTrace();
+//		}
 
 		finally {
 

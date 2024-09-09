@@ -6,6 +6,7 @@ import java.util.regex.Pattern;
 
 public class WordGroup_1 {
     public static void main(String[] args) {
+    	
         String text = "abc123 def456";
         
         // Using \\w+

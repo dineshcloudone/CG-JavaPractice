@@ -6,8 +6,7 @@ public class Main {
 	
 		System.out.println("This is dinesh");
 		
-		Student.sub.hello();
-		
+		Student.sub.hello();		
 		
 		/*
 		 *	System - this is final class from java.lang 		
@@ -17,7 +16,6 @@ public class Main {
 		 * 	 println() - method inside PrintStream class
  		 * 
 		 */
-	}
-	
+	}	
 
 }
